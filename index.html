@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Stegano - CyberAtlas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scan-overlay"></div>
+
+    <header class="site-header">
+      <div class="logo-area">
+        <img
+          src="image/logo club.png"
+          alt="Logo CyberAtlas"
+          class="logo"
+        />
+        <div class="logo-text">
+          <span class="club-name">CyberAtlas</span>
+          <span class="club-subtitle">Security Challenge Lab</span>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#challenge">Challenge</a>
+        <a href="#motivation">Motivation</a>
+      </nav>
+    </header>
+
+    <main class="main-layout">
+      <section class="hero-panel" id="top">
+        <div class="hero-content">
+          <p class="hero-kicker">CTF • Stegano • CyberSécurité</p>
+          <h1 class="hero-title">
+            🔒 Challenge Stegano
+            <span>CyberAtlas</span>
+          </h1>
+          <p class="hero-subtitle">
+            Infiltre les images, brise les secrets et prouve que tu mérites ta
+            place parmi les analystes cyber les plus affûtés.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#challenge" class="btn primary">Commencer le challenge</a>
+            <button class="btn ghost" id="btnToggleGlitch">
+              Mode glitch
+            </button>
+          </div>
+
+          <div class="hero-metadata">
+            <div>
+              <span class="meta-label">Niveau</span>
+              <span class="meta-value">Débutant ➝ Intermédiaire</span>
+            </div>
+            <div>
+              <span class="meta-label">Compétence ciblée</span>
+              <span class="meta-value">Stéganographie & esprit d'analyse</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-terminal">
+          <div class="term-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="term-title">cyberatlas@challenge:~$</span>
+          </div>
+          <div class="term-body">
+            <div id="terminal-log">
+              <p>&gt; Initialisation du challenge Stegano...</p>
+              <p>&gt; Chargement des images secrètes... OK</p>
+              <p>&gt; Indice: Chaque mot de passe commence par le mot visible.</p>
+              <p>&gt; En attente de ton premier mot de passe</p>
+            </div>
+            <form id="terminal-form" class="term-input" autocomplete="off">
+              <span class="prompt">&gt;</span>
+              <input
+                type="text"
+                id="terminal-command"
+                name="command"
+                placeholder="entre ton mot de passe ici puis Entrée..."
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="card card-challenge" id="challenge">
+        <h2>🔒 Challenge Stegano - CyberAtlas</h2>
+
+        <div class="challenge-visual">
+          <img
+            src="image/logo club.png"
+            alt="CyberAtlas Cybersecurity Club"
+            class="challenge-image"
+          />
+        </div>
+
+        <p class="section-intro">
+          Télécharge les images et trouve les messages cachés ! Observe chaque
+          détail, utilise tes outils et pense comme un attaquant.
+        </p>
+
+        <div class="challenge-grid">
+          <div class="challenge-item">
+           
+            <img src="image/logoEST.jpg" alt="Image 1 - Challenge Stegano" />
+            <p class="challenge-caption">Image 1</p>
+            <a href="image/logoEST.jpg" download class="btn dl-btn">Télécharger l'image 1</a>
+          </div>
+
+          <div class="challenge-item">
+           
+            <img src="image/me.jpeg" alt="Image 2 - Challenge Stegano" />
+            <p class="challenge-caption">Image 2</p>
+            <a href="image/me.jpeg" download class="btn dl-btn">Télécharger l'image 2</a>
+          </div>
+
+          <div class="challenge-item">
+            
+            <img src="image/logo club.png" alt="Image 3 - Challenge Stegano" />
+            <p class="challenge-caption">Image 3 </p>
+            <a href="image/logo club.png" download class="btn dl-btn">Télécharger l'image 3</a>
+          </div>
+        </div>
+
+        <p class="hint">
+          ✨ <strong>Indice :</strong> chaque mot de passe commence par le mot
+          visible sur l'image.
+        </p>
+      </section>
+
+      <section class="card card-motivation" id="motivation">
+        <h2>🚀 Ta mission</h2>
+        <p>
+          Ce challenge n'est pas seulement un jeu, c'est un entraînement à ta
+          future réalité de cybersécurité. Dans le monde réel, les attaques sont
+          souvent cachées dans des détails que la plupart des gens ne voient
+          jamais.
+        </p>
+        <p>
+          Si tu es ici, c'est que tu as déjà quelque chose de rare : la
+          curiosité. Garde-la, renforce ta rigueur, et n'abandonne pas à la
+          première difficulté. Chaque échec est juste un test de plus sur ton
+          chemin d'analyste.
+        </p>
+        <p class="motivation-strong">
+          Continue, teste, recommence, améliore ta méthode. Aujourd'hui tu
+          cherches des messages cachés dans des images. Demain, tu défendras de
+          vraies infrastructures.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> CyberAtlas • Challenge Stegano</span>
+      <span class="footer-right">Think like an attacker, act like a defender.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
