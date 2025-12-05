@@ -51,13 +51,13 @@ if (terminalForm && terminalCommand && terminalLog) {
 
     // Réponse selon le mot de passe
     const respLine = document.createElement("p");
-    if (value.toLowerCase() === "cyberatlas@2222") {
+    if (value.toLowerCase() === "cyberatlas@0001") {
       respLine.textContent = "✅ rakomghadin";
       respLine.classList.add("term-line-success");
-    } else if (value.toLowerCase() === "safi#2222") {
+    } else if (value.toLowerCase() === "safi@6789") {
       respLine.textContent = "✅ chwiua3lalwahed";
       respLine.classList.add("term-line-success");
-    } else if (value.toLowerCase() === "hacker$0001") { // ✅ Supprimé les espaces avant/après
+    } else if (value.toLowerCase() === "hacker#0001") { // ✅ Supprimé les espaces avant/après
       respLine.textContent = "✅ serbiw";
       respLine.classList.add("term-line-success");
     } else {
