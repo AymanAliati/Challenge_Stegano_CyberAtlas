@@ -51,7 +51,7 @@ if (terminalForm && terminalCommand && terminalLog) {
 
     // Réponse selon le mot de passe
     const respLine = document.createElement("p");
-    if (value.toLowerCase() === "cyberatlas!0001") {
+    if (value.toLowerCase() === "cyberatlas@0001") {
       respLine.textContent = "✅ rakomghadin";
       respLine.classList.add("term-line-success");
     } else if (value.toLowerCase() === "safi@2222") {
