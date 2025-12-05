@@ -60,28 +60,50 @@
           </div>
         </div>
 
-        <div class="hero-terminal">
-          <div class="term-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <span class="term-title">cyberatlas@challenge:~$</span>
-          </div>
-          <div class="term-body">
-            <div id="terminal-log">
-              <p>&gt; Initialisation du challenge Stegano...</p>
-              <p>&gt; Chargement des images secrètes... OK</p>
-              <p>&gt; Indice: Chaque mot de passe commence par le mot visible.</p>
-              <p>&gt; En attente de ton premier mot de passe</p>
+        <div class="hero-right-column">
+          <div class="hero-terminal">
+            <div class="term-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="term-title">cyberatlas@challenge:~$</span>
             </div>
-            <form id="terminal-form" class="term-input" autocomplete="off">
-              <span class="prompt">&gt;</span>
-              <input
-                type="text"
-                id="terminal-command"
-                name="command"
-                placeholder="entre ton mot de passe ici puis Entrée..."
-              />
+            <div class="term-body">
+              <div id="terminal-log">
+                <p>&gt; Initialisation du challenge Stegano...</p>
+                <p>&gt; Chargement des images secrètes... OK</p>
+                <p>&gt; Indice: Chaque mot de passe commence par le mot visible.</p>
+                <p>&gt; En attente de ton premier mot de passe</p>
+              </div>
+              <form id="terminal-form" class="term-input" autocomplete="off">
+                <span class="prompt">&gt;</span>
+                <input
+                  type="text"
+                  id="terminal-command"
+                  name="command"
+                  placeholder="entre ton mot de passe ici puis Entrée..."
+                />
+              </form>
+            </div>
+          </div>
+
+          <div class="answer-boxes">
+            <h3 class="answer-title">Entrez vos réponses</h3>
+            <form id="answer-form" class="answer-form">
+              <div class="answer-box-item">
+                <label for="box1" class="answer-label">Box 1</label>
+                <input type="text" id="box1" name="box1" class="answer-input" placeholder="Entrez votre réponse..." />
+              </div>
+              <div class="answer-box-item">
+                <label for="box2" class="answer-label">Box 2</label>
+                <input type="text" id="box2" name="box2" class="answer-input" placeholder="Entrez votre réponse..." />
+              </div>
+              <div class="answer-box-item">
+                <label for="box3" class="answer-label">Box 3</label>
+                <input type="text" id="box3" name="box3" class="answer-input" placeholder="Entrez votre réponse..." />
+              </div>
+              <button type="submit" class="btn primary submit-btn">Submit</button>
+              <p id="error-message" class="error-message"></p>
             </form>
           </div>
         </div>
@@ -106,23 +128,23 @@
         <div class="challenge-grid">
           <div class="challenge-item">
            
-            <img src="image/logoEST.jpg" alt="Image 1 - Challenge Stegano" />
+            <img src="image/1.jpeg" alt="Image 1 - Challenge Stegano" />
             <p class="challenge-caption">Image 1</p>
-            <a href="image/logoEST.jpg" download class="btn dl-btn">Télécharger l'image 1</a>
+            <a href="image/1.jpeg" download class="btn dl-btn">Télécharger l'image 1</a>
           </div>
 
           <div class="challenge-item">
            
-            <img src="image/me.jpeg" alt="Image 2 - Challenge Stegano" />
+            <img src="image/2.jpeg" alt="Image 2 - Challenge Stegano" />
             <p class="challenge-caption">Image 2</p>
-            <a href="image/me.jpeg" download class="btn dl-btn">Télécharger l'image 2</a>
+            <a href="image/2.jpeg" download class="btn dl-btn">Télécharger l'image 2</a>
           </div>
 
           <div class="challenge-item">
             
-            <img src="image/logo club.png" alt="Image 3 - Challenge Stegano" />
+            <img src="image/3.jpeg" alt="Image 3 - Challenge Stegano" />
             <p class="challenge-caption">Image 3 </p>
-            <a href="image/logo club.png" download class="btn dl-btn">Télécharger l'image 3</a>
+            <a href="image/3.jpeg" download class="btn dl-btn">Télécharger l'image 3</a>
           </div>
         </div>
 
@@ -130,6 +152,13 @@
           ✨ <strong>Indice :</strong> chaque mot de passe commence par le mot
           visible sur l'image.
         </p>
+
+        <div class="script-section">
+          <h3 class="script-title">📜 Script d'aide - Steghide Brute Force</h3>
+          <div class="script-download">
+            <a href="steghide_brute.sh" download class="btn primary">📥 Télécharger le script</a>
+          </div>
+        </div>
       </section>
 
       <section class="card card-motivation" id="motivation">
